@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header class="header">
+      
+        <nav class="navbar">
+            <a href="index.html" class="navbar__item--logo">LOGO Mon Siteweb.com</a>
+           
+            <div class="navbar__item--burger">
+                <label class="modal-label open" for="label-input">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </div>
+            <input type="checkbox" name="modal" value="open" id="label-input" class="modal-checkbox"/>
+            <div class="modal">
+              <label class="modal-label overlay" for="label-input"> </label>
+              <div class="modal-content">
+                <div class="top">
+                  <label class="modal-label close-btn" for="label-input">❌</label>
+                </div>
+                <a href="index.html" class="navbar__item--home">Accueil</a>
+                <a href="teams.html" class="navbar__item--team">Notre Equipe</a>
+                <a href="" class="navbar__item--project">Nos Projets</a>
+                <a href="" class="navbar__item--product">Nos Produits</a>
+                <a href="contact.html" class="navbar__item--contact">Contact</a>
+              </div>
+            </div>
+          </div>
+                
+        
+                  
+        
+    
+            <ul class="navbar__link">
+                <li><a href="index.html" class="navbar__item--home">Accueil</a></li>
+                <li><a href="teams.html" class="navbar__item--team">Notre Equipe</a></li>
+                <li><a href="" class="navbar__item--project">Nos Projets</a></li>
+                <li><a href="" class="navbar__item--product">Nos Produits</a></li>
+                <li><a href="contact.html" class="navbar__item--contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+    <!-- FIN DU HEADER -->
+
+    <!-- MAIN -->
+    <main>
+            <h1>ECRIVEZ-NOUS</h1>
+        <section class="contact">
+            <div class="contact_location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>NOS BUREAUX</h2>
+                <p>10, AVENUE DE BELFORT<br>75008 PARIS</p>
+            </div>
+            <div class="contact_phone">
+                <i class="fa-solid fa-phone"></i>
+                <h2>TELEPHONE</h2>
+                <p>234-9876-5400<br>888-0123-4567 (Toll Free)</p>
+            </div>
+            <div class="contact_fax">
+                <i class="fa-solid fa-fax"></i>
+                <h2>FAX</h2>
+                <p>1-234-567-8900</p>
+            </div>
+            <div class="contact_mail">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>MAIL</h2>
+                <p>info@email.com</p>
+            </div>
+        </section>
+        
+        <section class="formulaire">
+            <h2>NOUS SOMMES À VOTRE ÉCOUTE</h2>
+            <p>Disponibilité 24H / 24H</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Adresse email valide" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    
+        <section class="carte">
+            <h2>NOUS SOMMES ICI</h2>
+            <p>LUN-VEN 8:30AM - 5PM / TEL 24/7</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9073269518557!2d-74.00594128459351!3d40.71277597933143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3175a456ab%3A0x804f58c7201a7b65!2sWall%20St%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sfr!4v1642612345678" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+      
+    </main>
+    <!-- FIN DU MAIN -->
+</body>
+
+</html>

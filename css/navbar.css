@@ -1,0 +1,131 @@
+.header
+{
+    height: 10vh;
+}
+.navbar
+{
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #000000;
+}
+.navbar__item--logo
+    {
+        color:white;
+        display: flex;
+        align-items: center; /* Pour aligner le contenu verticalement au centre */
+        justify-content: center; /* Pour aligner le contenu horizontalement à gauche */
+        margin-right: auto; /* Pour pousser les éléments suivants vers la droite */
+        text-decoration: none;
+    }
+
+.navbar__link
+{
+    display: none;
+}
+.navbar__item--burger
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+label
+{
+    cursor: pointer;
+}
+label > span
+{
+    display: flex;
+}
+span
+{
+    width: 30px;
+    height: 3px;
+    border: white 2px solid;
+    margin: 5px auto;
+   
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+.modal-content
+{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.modal-content > a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.modal-content > a:hover
+{
+    color: rgba(255, 255, 255, 1);
+    border-bottom: rgb(220, 6, 220) 2px solid;
+    padding: 2px;
+}
+.modal
+{
+    display: none;
+    z-index: 999;
+}
+/* Lorsque la checkbox est cochée, affichez le modal */
+.modal-checkbox:checked ~ .modal {
+    display: block;
+     z-index: 999;
+  
+}
+
+
+@media screen and (min-width: 768px)
+{
+
+   .navbar__item--burger
+    {
+       display: none;
+    }
+    .modal-checkbox:checked ~ .modal
+    {
+        display: none;
+    }
+    .modal
+    {
+        display: none;
+    }
+    .navbar
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .navbar__link
+    {
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+        gap:2rem;
+        
+    }
+    ul > li > a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    li > *:hover
+    {
+        color: rgba(255, 255, 255, 1);
+       border-bottom: rgb(220, 6, 220) 2px solid;
+       padding: 2px;
+        
+    }
+    
+   
+    
+}

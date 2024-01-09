@@ -1,0 +1,16 @@
+@import url('reset.css');
+@import url('navbar.css');
+@import url('card.css');
+@import url('product.css');
+@import url('hero.css');
+
+body
+{
+ background-color: antiquewhite;
+
+}
+main
+{
+    display:flex;
+    gap:20rem;
+}
